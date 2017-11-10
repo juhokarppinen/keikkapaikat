@@ -1,0 +1,93 @@
+<html>
+  <head>
+	<meta charset="UTF-8">
+  </head>
+  <body>
+<h1>Keikkapaikat</h1>
+
+<h2>1. Lyhyesti</h2>
+
+<p>Keikkapaikat on tietokantaohjelma, jonka avulla voi tallentaa tietoja
+Suomen keikkapaikoista erityisesti tanssi- ja iskelmägenressä.</p>
+
+<h2>2. Ohjelman käynnistys</h2>
+
+<p>Ohjelma käynnistetään komennolla <code>java -jar Keikkapaikat.jar</code>, tai jos
+käytössäsi on Java Runtime, klikkaa Keikkapaikat.jar-tiedostoa hiiren
+oikealla napilla ja valitse 'Avaa ohjelmassa -> Java Runtime'. Ohjelma vaatii
+toimiakseen tiedoston <code>keikkapaikat/kunnat.dat</code>.</p>
+
+<h2>3. Pääikkuna</h2>
+
+<p>Pääikkuna koostuu <em>valikkorivistä</em>, <em>keikkapaikkalistasta</em> sekä valitun
+keikkapaikan tiedot ja yhteystiedot sisältävästä <em>tietoalueesta</em>.</p>
+
+<h3>3.1 Valikkorivi</h3>
+
+<p>Valikkorivillä on kolme alasvetovalikkoa:</p>
+
+<ol>
+<li>Tiedosto - <strong>Tallenna</strong> muutokset tiedostoihin tai <strong>Lopeta</strong> ohjelma.</li>
+<li>Muokkaa - <strong>Lisää</strong> uusi keikkapaikka tai <strong>Poista</strong> valittu keikkapaikka.</li>
+<li>Apua - Näytä tämä <strong>Ohje</strong> tai näytä <strong>Tietoja</strong> uudessa ikkunassa.</li>
+</ol>
+
+<h3>3.2 Keikkapaikkalista</h3>
+
+<p>Keikkapaikkalistassa näkyy tietokannan sisältämät keikkapaikat, joita
+klikkaamalla voi valita, minkä keikkapaikan tiedot näkyvät ikkunassa.</p>
+
+<p>Listan alla ovat napit <strong>Lisää</strong> ja <strong>Poista</strong>, jotka toimivat samoin kuin
+Muokkaa-valikon toiminnot: niillä voi siis lisätä uuden keikkapaikan
+tai poistaa valitun keikkapaikan.</p>
+
+<p>Lisäksi alaosasta löytyy hakukenttä, jolla voi etsiä keikkapaikkoja nimen,
+kunnan tai maakunnan perusteella. Kun hakukentään kirjoittaa jotakin,
+listaan suodattuvat ne keikkapaikat, joiden nimistä löytyy annettu
+merkkijono, tai joidenka kunnat tai maakunnat alkavat annetulla merkkijonolla.
+<strong>Tyhjennä</strong>-napista voi tyhjentää hakukentän, jolloin kaikki keikkapaikat
+palaavat näkyviin.</p>
+
+<h3>3.3 Tietoalue</h3>
+
+<p>Tietoalue näyttää kaikki valitun keikkapaikan tiedot ja kuvaukset keikkapaikan
+käytännön järjestelyistä. Huomaa, että tekstikenttiin annetut tiedot jäävät
+voimaan vasta, kun olet painanut rivinvaihtonäppäintä. Lisäksi muutetut tiedot
+tallennetaan kovalevylle vain, kun valitset <strong>Tiedosto</strong>-valikosta kohdan
+<strong>Tallenna</strong>.</p>
+
+<ol>
+<li>Nimi -- Keikkapaikan nimi</li>
+<li>Lähiosoite -- Keikkapaikan osoite. Osoitekentän vieressä oleva <strong>Avaa</strong>-nappi avaa
+oletusselaimessa Google Maps -sivun.</li>
+<li>Kunta -- Keikkapaikan kunta. Ohjelma tarkistaa kunnan oikeellisuuden ja liittää
+siihen maakunnan automaattisesti. Riittää kirjoittaa kunnan nimen alkua ja painaa
+enteriä.</li>
+<li>Maakunta -- Keikkapaikan maakunta, jonka ohjelma määrittelee automaattisesti
+kunnan perusteella.</li>
+<li>Nettisivut -- Keikkapaikan nettisivut. Tekstikentän vieressä oleva <strong>Avaa</strong>-nappi
+avaa osoitteen oletusselaimessa.</li>
+<li>Yhteystiedot -- Keikkapaikan yhteystiedot. Voit lisätä enintään kaksi
+puhelinnumeroa ja/tai sähköpostiosoitetta.</li>
+<li>Roudaus -- Kuvaile roudaus keikkapaikalle.</li>
+<li>Lavan koko -- Etenkin lavan pienuus tai mataluus on hyvä mainita</li>
+<li>Voimavirtapistoke -- Mistä löytyy lähin voimavirtapistoke. Mahdollisesti kannattaa
+mainita myös, onko kyseessä 16A vai 32A liitin.</li>
+<li>Talon valot -- Onko talossa omaa esiintymistekniikkaa, ja jos on, minkälaista.</li>
+<li>Talon PA -- Onko talossa omaa äänentoistoa, ja jos on, minkälaista.</li>
+<li>Talon taukomusiikki -- Haluaako talo hoitaa taukomusiikin, vai soittaako bändi
+omalla soittorasiallaan. Tähän kannattaa myös lisätä maininta, jos taukomusiikkia
+ei tarvita.</li>
+<li>Savukoneen käyttö -- Saako paikassa käyttää savukonetta, millaista savua saa
+käyttää ja vaatiiko esim. ennakkoilmoituksen.</li>
+<li>Muita huomioita -- Lisää tähän sellaiset huomiot, jotka eivät sovi aiempiin
+kategorioihin.</li>
+<li>Ruokailu ja majoitus -- Järjestääkö keikkapaikka lämpimän ruuan ja yöpymisen.</li>
+</ol>
+
+<h2>4. Bugeja tai muita huomioita?</h2>
+
+<p>Lähettäkää virheraportit ja kehitysehdotukset osoitteeseen
+<a href="mailto:juho.karppinen@gmail.com">juho.karppinen@gmail.com</a>.</p>
+  </body>
+</html>
