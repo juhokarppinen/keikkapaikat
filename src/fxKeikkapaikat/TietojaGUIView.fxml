@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="323.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxKeikkapaikat.TietojaGUIController">
+   <bottom>
+      <Button fx:id="buttonOK" mnemonicParsing="false" onAction="#handleOK" text="OK" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <center>
+      <BorderPane maxHeight="75.0" BorderPane.alignment="CENTER">
+         <top>
+            <Label text="Keikkapaikat" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <Label text="Versio 1.0" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Label text="Juho Karppinen" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </center>
+</BorderPane>
